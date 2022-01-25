@@ -24,7 +24,7 @@
     </div>
     <div class="navbar__menu">
       <ul class="navbar__menu">
-        <li class="navbar__menu__item">Home</li>
+        <li class="navbar__menu__item active">Home</li>
         <li class="navbar__menu__item">About</li>
         <li class="navbar__menu__item">Skills</li>
         <li class="navbar__menu__item">Work</li>
@@ -41,132 +41,136 @@
     <button class="home__contact">Contact</button>
   </section>
   <!-- About -->
-  <section id="about">
+  <section id="about" class="section section__container">
     <h1>About Me</h1>
-    <p>순천향대학교 정보보호학과에 재학중인 3학년 학생 신건우입니다. 현재 프론트엔드 공부 중에 있습니다.</p>
+    <p class="introduce">순천향대학교 정보보호학과에 재학중인 3학년 학생 신건우입니다. 현재 프론트엔드 공부 중에 있습니다.</p>
     <div class="about__school">
       <div class="school">
         <div class="school__icon">
           <img src="imgs/schoolemblem.png" alt="순천향대학교 엠블럼" class="school__emblem">
         </div>
-        <div class="school__title">
+        <h2 class="school__title">
           순천향대학교
-        </div>
+        </h2>
       </div>
-      <div class="major">
-        <div class="major__icon">
-          <img src="imgs/cybersecurity.png" alt="정보보호학과" class="school__major">
+      <div class="school">
+        <div class="school__icon">
+          <img src="imgs/cybersecurity.png" alt="정보보호학과" class="school__emblem">
         </div>
-        <div class="major__name">
+        <h2 class="school__title">
           정보보호학과
-        </div>
+        </h2>
       </div>
     </div>
     <div class="about__career">
       <div class="career">
         <img src="imgs/schoolemblem.png" alt="순천향대학교" class="career__logo">
-        <p class="career__name">순천향대학교 정보보호학과</p>
-        <p class="career__period">2017 ~ 2024</p>
+        <div class="career__desciption">
+          <p class="career__name">순천향대학교 정보보호학과</p>
+          <p class="career__period">2017 ~ 2024</p>
+        </div>
       </div>
     </div>
   </section>
   <!-- Skills -->
-  <section id="skills">
-    <h1>Skills</h1>
-    <h2>Skills & Attributes</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus necessitatibus deserunt voluptatum consequatur possimus odit dolores ad, distinctio commodi. Natus accusamus cumque doloribus maiores nesciunt consequuntur, eveniet quod vero corrupti!</p>
-    <div class="skill__skillset">
-      <div class="skillset__left">
-        <h3 class="skillset__title">Skills</h3>
-        <div class="skill">
-          <div class="skill__description">
-            <span>HTML</span>
-            <span>70%</span>
+  <section id="skills" class="section">
+    <div class="section__container">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus necessitatibus deserunt voluptatum consequatur possimus odit dolores ad, distinctio commodi. Natus accusamus cumque doloribus maiores nesciunt consequuntur, eveniet quod vero corrupti!</p>
+      <div class="skill__skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>70%</span>
+            </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>CSS</span>
+              <span>75%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>JAVASCRIPT</span>
+              <span>30%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 30%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>VUE</span>
+              <span>50%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 50%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>REACT</span>
+              <span>0%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 0%"></div>
             </div>
           </div>
         </div>
-        <div class="skill">
-          <div class="skill__description">
-            <span>CSS</span>
-            <span>75%</span>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+            </ul>
           </div>
-        </div>
-        <div class="skill">
-          <div class="skill__description">
-            <span>JAVASCRIPT</span>
-            <span>30%</span>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+            </ul>
           </div>
-        </div>
-        <div class="skill">
-          <div class="skill__description">
-            <span>VUE</span>
-            <span>50%</span>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill__description">
-            <span>REACT</span>
-            <span>0%</span>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="skillset__right">
-        <div class="tools">
-          <h3 class="skillset__title">Tools</h3>
-          <ul class="tools__list">
-            <li><span>Visual Studio Code</span></li>
-          </ul>
-        </div>
-        <div class="etc">
-          <h3 class="skillset__title">Etc</h3>
-          <ul class="etc__list">
-            <li><span>Git</span></li>
-          </ul>
         </div>
       </div>
     </div>
   </section>
   <!-- Work -->
-  <section id="work">
+  <section id="work" class="section section__container">
     <h1>My Work</h1>
     <h3>Projects</h3>
     <div class="work__categories">
-      <button class="category__btn">All<span class="category__count">8</span></button>
+      <button class="category__btn active">All<span class="category__count">8</span></button>
       <button class="category__btn">VanilaJS<span class="category__count">3</span></button>
       <button class="category__btn">Vue<span class="category__count">2</span></button>
       <button class="category__btn">React<span class="category__count">3</span></button>
     </div>
     <div class="work__projects">
       <a href="https://github.com/GeonwooShin/starbucks.git" target="blank" class="project">
-        <img src="./imgs/projects/starbucks-clone-project.png" alt="스타벅스 클론코딩">
+        <img src="./imgs/projects/starbucks-clone-project.png" alt="스타벅스 클론코딩" class="project__img">
         <div class="project__description">
           <h3>Starbucks Clone Site</h3>
           <span>Clone Coding with HTML, CSS and JS</span>
         </div>
       </a>
       <a href="https://github.com/GeonwooShin/vue3-movieSearch.git" target="blank" class="project">
-        <img src="./imgs/projects/vue-project2.png" alt="영화검색 사이트">
+        <img src="./imgs/projects/vue-project2.png" alt="영화검색 사이트" class="project__img">
         <div class="project__description">
           <h3>Movie Search Site</h3>
           <span>Toy project with Vue3</span>
         </div>
       </a>
       <a href="https://github.com/GeonwooShin/Toy-project-starbooks.git" target="blank" class="project">
-        <img src="./imgs/projects/vue-project.png" alt="책 검색 사이트">
+        <img src="./imgs/projects/vue-project.png" alt="책 검색 사이트" class="project__img">
         <div class="project__description">
           <h3>Book Search Site</h3>
           <span>Toy project with Vue3</span>
@@ -175,7 +179,7 @@
     </div>
   </section>
   <!-- Testimonials -->
-  <section id="testimonials">
+  <section id="testimonials" class="section section__container">
     <h1>Testimonials</h1>
     <h3>See what they say about me</h3>
     <div class="testimonials">
@@ -183,28 +187,28 @@
         <img src="imgs/testimonial/erik.png" alt="Erik" class="testimonial__avatar">
         <div class="testimonial__speech">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reprehenderit consequatur nam quaerat dicta nulla accusamus aspernatur nisi deserunt laboriosam fuga eos corrupti et quibusdam illum, laborum maiores dolores repellat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae libero deleniti sunt modi corrupti delectus id debitis officia eligendi, assumenda dolores magnam iure enim, expedita, tenetur autem porro cupiditate architecto?</p>
-          <p class="name"><a href="">Erik</a><span>Google</span></p>
+          <p class="name"><a href="">Erik</a><span> / Google</span></p>
         </div>
       </div>
       <div class="testimonial">
-        <img src="imgs/testimonial/jimmy.png" alt="Jimmy" class="testimonial__avatar">
         <div class="testimonial__speech">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reprehenderit consequatur nam quaerat dicta nulla accusamus aspernatur nisi deserunt laboriosam fuga eos corrupti et quibusdam illum, laborum maiores dolores repellat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae libero deleniti sunt modi corrupti delectus id debitis officia eligendi, assumenda dolores magnam iure enim, expedita, tenetur autem porro cupiditate architecto?</p>
-          <p class="name"><a href="">Jimmy</a><span>Samsung</span></p>
+          <p class="name"><a href="">Jimmy</a><span> / Samsung</span></p>
         </div>
+        <img src="imgs/testimonial/daisy.png" alt="Daisy" class="testimonial__avatar">
       </div>
     </div>
   </section>
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" class="section">
     <h1 class="contact__title">Let's talk</h1>
     <h2 class="contact__email">superior5058@naver.com</h2>
     <div class="contact__links">
-      <a href="https://github.com/GeonwooShin">
+      <a href="https://github.com/GeonwooShin" target="blank">
         <i class="fab fa-github"></i>
       </a>
     </div>
-    <p class="contact__rights">2022 GeonwooShin - All rights reserved</p>
+    <p class="contact__rights">Copyright 2022 GeonwooShin - All rights reserved</p>
   </section>
 </body>
 </html>

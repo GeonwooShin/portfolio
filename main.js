@@ -33,3 +33,23 @@ const contactBtn = document.querySelector('.home__contact')
 contactBtn.addEventListener('click', () => {
   scrollIntoView('#contact')
 })
+
+// 스크롤하면 해당 탭 투명하게
+const home = document.querySelector('.home__container')
+const homeHeight = home.getBoundingClientRect().height
+document.addEventListener('scroll', () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight
+})
+
+// 맨위로 이동 버튼
+const arrowbtn = document.querySelector('.arrowbtn')
+document.addEventListener('scroll', () => {
+  arrowbtn.style.opacity = window.scrollY / homeHeight
+})
+arrowbtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  })
+})

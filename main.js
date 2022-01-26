@@ -25,7 +25,15 @@ navbarMenu.addEventListener('click', (event) => {
   if(link === null) {
     return 
   }
+  navbarMenu.classList.remove('open')
   scrollIntoView(link)
+})
+
+// 토글버튼 클릭하면 네비게이션 바가 내려오도록
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn')
+
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open')
 })
 
 // contact 버튼 클릭 후 contact 탭으로 이동
@@ -83,3 +91,4 @@ workBtnContainer.addEventListener('click', (event) => {
     projectContainer.classList.remove('anim-out')
   }, 300)
 })
+

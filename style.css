@@ -7,7 +7,7 @@
   --color-dark-grey: #2e2d2d;
   --color-grey: #616161;
   --color-light-grey: #9e9e9e;
-  --color-light-green: #048b6c;
+  --color-light-green: #467469;
 
   /* Font size */
   --font-large: 48px;
@@ -90,16 +90,18 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 10px solid var(--color-dark-grey);
+  border: 8px solid var(--color-black);
   border-radius: 50%;
   position: fixed;
   bottom: 40px;
   right: 40px;
+  z-index: 1;
+  background-color: var(--color-primary);
 }
 
 .arrowbtn svg {
   font-size: medium;
-  color: var(--color-dark-grey);
+  color: var(--color-black);
 }
 
 /* Navbar */
@@ -160,7 +162,7 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 20px;
+  top: 14px;
   right: 32px;
   font-size: 24px;
   display: none;
@@ -189,7 +191,7 @@ p {
 
 .home__contact {
   color: var(--color-white);
-  font-size: var(--font-regular);
+  font-size: var(--font-small);
   font-weight: var(--weight-bold);
   margin: 24px;
   padding: 8px 12px;
@@ -197,9 +199,15 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.home__contact:hover {
+  background-color: var(--color-light-green);
+  transition: all 300ms ease;
+}
+
 /* Section common */
 .section {
   padding: 50px;
+  padding-top: 80px;
   text-align: center;
   margin: auto;
 }
@@ -341,6 +349,7 @@ p {
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  position: relative;
 }
 
 .category__btn.active,
@@ -358,9 +367,9 @@ p {
   width: 24px;
   height: 24px;
   line-height: 24px;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 16px;
   opacity: 0;
   transition: all 300ms ease-in;
 }
@@ -447,7 +456,7 @@ p {
 }
 
 .testimonials {
-  margin: 40px;
+  margin: 40px 0;
 }
 
 .testimonial {
@@ -505,8 +514,36 @@ p {
 }
 
 @media screen and (max-width: 793px) {
+  :root {
+  /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  .arrowbtn {
+    width: 35px;
+    height: 35px;
+    border: 5px solid var(--color-black);
+    right: 36px;
+    bottom: 36px;
+    line-height: 35px;
+  }
+
+  .arrowbtn svg {
+    font-size: var(--font-medium);
+  }
+
   .navbar__toggle-btn {
     display: block;
+    right: 12px;
+  }
+
+  .navbar--dark .navbar__toggle-btn {
+    top: 6px;
+    right: 15px;
   }
 
   #navbar {
@@ -530,8 +567,15 @@ p {
     background-color: var(--color-white);
   }
 
+  .section {
+    padding: 16px;
+    padding-top: 40px;
+  }
+
   .about__school {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 
   .school {
@@ -551,8 +595,39 @@ p {
     flex-direction: column;
   }
 
+  .category__btn {
+    margin: 4px 0;
+    width: 100%;
+  }
+
+  .category__btn.active .category__count,
+  .category__btn:hover .category__count {
+    opacity: 1;
+    top: 5px;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .testimonial__avatar {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .testimonial__speech {
+    order: 1;
+  }
+
+  .testimonial__avatar:nth-child(even),
+  .testimonial__avatar:nth-child(odd) {
+    margin: 0 0 8px 0;
   }
 }
